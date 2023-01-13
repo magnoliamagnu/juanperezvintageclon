@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: #80A1A1;
+    box-sizing: border-box;
+}
+
+.imagenprincipalmain{
+    background-image: url(../assets/foto_de_2_chicas.jpg);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+
+}
+.tex_letraheader{
+    text-decoration: none;
+    color: black;
+    padding: 0.75rem;
+    background-color:#80A1A1;
+    border-radius: 20px;
+}
+
+.imagenprincipalmainfondorojo{
+    background-image: url(../assets/campera_amarilla.jpg);
+    height: 1500px;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.Section1vender{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f3eded;
+    align-items: center;
+    text-decoration: none;
+
+}
+.imagenprincipalmain2chicas{
+    background-image: url(../assets/fot\ modelo\ .jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+}
+
+
+.imagenprincipalmaincamperaamrillanuestra{
+    background-image: url(../assets/campera_amarilla.jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    border: #80A1A1;
+}
+
+.container{
+    width: 28%;
+    margin: auto;
+    background: url(../assets/campera_amarilla.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 33px 67px;
+    border-top: 6px solid #f3eded;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer1{
+    padding: 2rem;
+   
+}
+
+.footer2{
+    padding: 2rem;
+   
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+}
+
+.slide{
+    width: 80% !important;
+    justify-content: center;
+   
+}
+@media (max-width: 500px ){
+    .footer{
+        background-color: #d9d6d6;
+        
+    }
+}
