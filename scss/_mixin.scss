@@ -1,0 +1,13 @@
+@mixin cuadros{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    color: rgb(24, 16, 16);
+    padding: 0.75rem;
+    background-color:#cadddd;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

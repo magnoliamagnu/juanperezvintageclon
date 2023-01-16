@@ -34,3 +34,48 @@
   .footer ul {
     list-style: none;
     text-align: center; }
+
+@media (max-width: 500px) {
+  .footer {
+    background-color: #d9d6d6; } }
+
+/*-----  Sobre Juan Perez -----*/
+.imagenprincipalmain2chicas {
+  background-image: url(../assets/fotmodelo.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover; }
+
+/*-----  Nuestra Plataforma -----*/
+.imagenprincipalmaincamperaamrillanuestra {
+  background-image: url(../assets/campera_amarilla.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  border: #80A1A1; }
+
+/*-----  Inicio seccion -----*/
+.container {
+  width: 28%;
+  margin: auto;
+  background: url(../assets/campera_amarilla.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px 33px 67px;
+  border-top: 6px solid #f3eded; }
+
+/*----- cuadros informativos -----*/
+.cuadrosinformativo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
+  color: #181010;
+  padding: 0.75rem;
+  background-color: #cadddd;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .cuadrosinformativo h1 {
+    background-color: #a9c69e; }
