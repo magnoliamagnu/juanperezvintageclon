@@ -26,18 +26,40 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #f5eeee;
+  width: 100%; }
   .footer .footer1 {
-    padding: 2rem; }
-  .footer .footer2 {
-    padding: 2rem; }
+    padding: 2rem;
+    max-width: 400px;
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 20px; }
+  .footer .buttons a {
+    margin: 100px;
+    padding: 0.5rem;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out; }
   .footer ul {
     list-style: none;
     text-align: center; }
 
 @media (max-width: 500px) {
   .footer {
-    background-color: #d9d6d6; } }
+    background-color: #b5bebe;
+    color: black; } }
 
 /*-----  Sobre Juan Perez -----*/
 .imagenprincipalmain2chicas {
@@ -46,10 +68,51 @@
   width: 100%;
   background-size: cover; }
 
+.contenedorfundados {
+  width: 100%;
+  height: auto; }
+
+.chicosjuanperez {
+  background-image: url(../assets/chicosobrejp.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover; }
+
+.vidrierajp2argentina {
+  background-image: url(../assets/VIDRIERAARGENTINA.JPG);
+  height: 700px;
+  width: 100%;
+  background-size: cover; }
+
+/*-----  Vender Ahora -----*/
+.imagenprincipalchicarubia {
+  background-image: url(../assets/modelorubia.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  border: #80A1A1; }
+
+.clientesjp2 {
+  background-image: url(../assets/clientes.png);
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  border: #80A1A1; }
+
+p {
+  font-size: 16px; }
+
+.consignacion {
+  background-image: url(../assets/percheros.jpg);
+  height: 700px;
+  width: 100%;
+  background-size: cover;
+  border: #80A1A1; }
+
 /*-----  Nuestra Plataforma -----*/
 .imagenprincipalmaincamperaamrillanuestra {
   background-image: url(../assets/campera_amarilla.jpg);
-  height: 700px;
+  height: auto;
   width: 100%;
   background-size: cover;
   border: #80A1A1; }
@@ -76,6 +139,5 @@
   padding: 0.75rem;
   background-color: #cadddd;
   border-radius: 20px;
-  font-family: Arial, Helvetica, sans-serif; }
-  .cuadrosinformativo h1 {
-    background-color: #a9c69e; }
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px; }
