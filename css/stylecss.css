@@ -7,7 +7,7 @@
 
 /* ----- Home ----- */
 .imagenprincipalmain {
-  background-image: url(../assets/foto_de_2_chicas.jpg);
+  background-image: url(../assets/doschicasvendeturopa.png);
   height: 300px;
   width: 100%;
   background-size: cover; }
@@ -25,12 +25,11 @@
 .footer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   background-color: #f5eeee;
   width: 100%; }
   .footer .footer1 {
-    padding: 2rem;
+    padding: 1rem;
     max-width: 400px;
     margin-top: 20px;
     font-size: 15px;
@@ -65,8 +64,8 @@
 .imagenprincipalmain2chicas {
   background-image: url(../assets/fotmodelo.jpg);
   height: 700px;
-  width: 100%;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%; }
 
 .contenedorfundados {
   width: 100%;
@@ -75,28 +74,28 @@
 .chicosjuanperez {
   background-image: url(../assets/chicosobrejp.jpg);
   height: 700px;
-  width: 100%;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%; }
 
 .vidrierajp2argentina {
   background-image: url(../assets/VIDRIERAARGENTINA.JPG);
   height: 700px;
-  width: 100%;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%; }
 
 /*-----  Vender Ahora -----*/
 .imagenprincipalchicarubia {
   background-image: url(../assets/modelorubia.jpg);
   height: 700px;
-  width: 100%;
   background-size: cover;
+  width: 100%;
   border: #80A1A1; }
 
 .clientesjp2 {
   background-image: url(../assets/clientes.png);
   height: 150px;
-  width: 100%;
   background-size: cover;
+  width: 100%;
   border: #80A1A1; }
 
 p {
@@ -105,16 +104,16 @@ p {
 .consignacion {
   background-image: url(../assets/percheros.jpg);
   height: 700px;
-  width: 100%;
   background-size: cover;
+  width: 100%;
   border: #80A1A1; }
 
 /*-----  Nuestra Plataforma -----*/
 .imagenprincipalmaincamperaamrillanuestra {
   background-image: url(../assets/campera_amarilla.jpg);
   height: auto;
-  width: 100%;
   background-size: cover;
+  width: 100%;
   border: #80A1A1; }
 
 /*-----  Inicio seccion -----*/
