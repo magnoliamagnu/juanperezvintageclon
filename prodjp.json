@@ -1,0 +1,19 @@
+[
+    {
+        "modelo":"Mujer",
+        "produccion":2010,
+        "talle":12
+    },
+
+    {
+        "modelo":"Hombre",
+        "produccion":2021,
+        "talle":48
+    },
+
+    {
+        "modelo":"infantil",
+        "produccion":2010,
+        "talle":5
+    }
+]
