@@ -106,65 +106,74 @@
 
 
 ///------------------- Tercera preentrega --------------///
-guardar_localstorage();
- 
-
-function guardar_localstorage(){
-    let empleado = {
-        nombre:"Magnolia",
-        edad:28,
-        horasTrabajadas:8,
-        comision:2,
-    }
-};
-
- let nombre = "Paulette";
-
- localStorage.setItem( "nombre",nombre    );
+const shopContent =document.getElementById("shopContent");
+const verCarrito=document.getElementById("verCarrito");
+const modalContainer =document.getElementById("modal-Container")
 
 
+let carrito =[]
+productos.forEach((product)=> {
+    let content = document.createElement("div");
+    content.className ="card";
+    content.innerHTML = `
+    <img src="${product.img} ">
+    <h3>${product.nombre}</h3>
+    <p class="price">${product.precio}</p>
+    `;
 
-const prodjp =`[
-   
-        {
-            "modelo":"Mujer",
-            "produccion":2010,
-            "talle":12
-        },
+    shopContent.append(content);
+
+    let comprar =document.createElement("button")
+    comprar.innerText= "Comprar";
+    comprar.className="comprar"
+
+    content.append(comprar);
+
+    comprar.addEventListener("click",() =>{
+        carrito.push({
+            id : product.id,
+            img:product.img,
+            nombre:product.nombre,
+            precio:product.precio,
+        })
+        console.log(carrito);
+    })
+})
+
+verCarrito.addEventListener("click",() => {
+    const modalHeader = document.createElement("div");
+    modalHeader.className ="modal-header"
+    modalHeader.innerHTML =`
+    <h1 class="modal-header-title">carrito.</h1>
+    `;
+    modalContainer.append(modalHeader);
     
-        {
-            "modelo":"Hombre",
-            "produccion":2021,
-            "talle":48
-        },
+    const modalbutton =document.createElement("h1");
+    modalbutton.innerText ="X",
+    modalbutton.className ="modal-header-button";
+
+    modalHeader.append(modalbutton);
+
+
+
+    carrito.forEach((product) => {
+        let carritoContent =document.createElement("div");
+        carritoContent.className = "modal-content";
+        carritoContent.innerHTML = `
+        <img src="${product.img}">
+        <h3>${product.nombre}</h3>
+        <p>${product.precio}$</p>
+        `;
+
+        modalContainer.append(carritoContent)
+
+    });  
+
+    const total = carrito.reduce((acc,el) => acc + el.precio,0);
+
+    const totalBuying = document.createElement("div");
+    totalBuying.className ="total-content"
+    totalBuying.innerHTML = `total a pagar: ${total}$`;
+    modalContainer.append(totalBuying);
     
-        {
-            "modelo":"infantil",
-            "produccion":2010,
-            "talle":5
-        }
-    ]
-`;
-
-console.log(typeof prodjp);
-
-const jsonData = JSON.parse(prodjp);
-console.log(typeof jsonData);
-
-
- const ProductosNuevos = jsonData.filter(
-    (producto) => producto.prouccion  > 2010 && producto.talle <45
-);
-
-console.log(ProductosNuevos);
-
-const newProdjp = JSON.stringify(ProductosNuevos);
-console.log (typeof newProdjp);
-
-
-//------------DOM---------//
-
-
-let anclas = document.getElementsByTagName("a")
-console.log(anclas);
-console.log(Array.isArray(anclas))
+});
