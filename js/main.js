@@ -177,3 +177,40 @@ verCarrito.addEventListener("click",() => {
     modalContainer.append(totalBuying);
     
 });
+
+const cargarPeliculas= async () => {
+    try{
+        const respuesta = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=ecc197e67d1d06508ae14700aca8b7b5&languaje=es-Mx");
+    
+        console.log(respuesta);
+
+        if(respuesta.status === 200){
+
+            const datos= await respuesta.json();
+
+            let peliculas=``;
+
+            datos.results.forEach(pelicula =>{
+                console.log(pelicula.title);
+
+            });
+
+
+        } else if(respuesta.status === 401){
+            console.log("Colocaste mal la llaves");
+        } else if(respuesta.status === 404){
+            console.log("La pelicula no");
+        } else{
+            console.log("Tenemos un error fuera de lo habitual")
+        }
+
+
+    } catch(error){
+        console.log(error);
+    }
+
+}
+    
+   
+
+cargarPeliculas();

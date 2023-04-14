@@ -366,7 +366,7 @@ p {
   display: flex;
   justify-content: space-between;
   height: 12vh;
-  background-color: #181010;
+  background-color: #a12828;
 }
 .navbar-logo{
   justify-self: start;
@@ -386,9 +386,9 @@ p {
 .banner{
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 50vh;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-  url("https://i.pinimg.com/474x/a3/64/7a/a3647ade6c24ec970f0839480f7bf3d3.jpg");
+  url("https://i.pinimg.com/564x/80/63/de/8063deca190ac2d0c55d12476b790dd9.jpg");
 }
 .banner-container{
   text-align: center;
